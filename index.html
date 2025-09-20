@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste de Ferramentas</title>
+</head>
+<body>
+    <div class="acessibilidade">
+        <button id="preto-e-branco"><img src="img/ico-pretobranco.png" alt="Ferramenta Preto e Branco"></button>
+        <button id="aumentar-texto"><img src="img/ico-amais.png" alt="Ferramenta Aumentar Texto"></button>
+        <button id="diminuir-texto"><img src="img/ico-amenos.png" alt="Ferramenta Diminuir Texto"></button>
+        <button id="alternar-contraste"><img src="img/ico-altocontraste.png" alt="Ferramenta Alto Contraste"></button>
+        <button id="libras"><img src="img/ico-libras.png" alt="Ferramenta Libras"></button>
+        <button id="comando-de-voz"><img src="img/ico-voz.png" alt="Ferramenta Comando de Voz"></button>
+    </div><br>
+
+    <h1>Testando Ferramentas ACD</h1><br>
+
+    <p class="link">Testando Link <a href="https://youtube.com">clique aqui</a></p>
+
+    <p><img src="img/espectro.jpg" alt="Imagem do Espectro de Cores que são visíveis a olho nu" title="Espectro de Cores"></p>
+
+
+    <!-- PLUGIN V LIBRAS-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <!-- SCRIPT V LIBRAS -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- SCRIPT DAS FERRAMENTAS -->
+    <script src="script.js"></script>
+</body>
+</html>

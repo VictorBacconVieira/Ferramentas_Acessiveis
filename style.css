@@ -1,0 +1,72 @@
+.acessibilidade{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.acessibilidade button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100px;
+    height: 75px;
+    background-color: rgb(224, 223, 223);
+    border: 2px solid rgb(122, 122, 122);
+    border-radius: 10%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.acessibilidade button:hover{
+    background-color: rgb(168, 163, 163);
+    color: white;
+}
+
+.acessibilidade button:active{
+    transform: scale(0.95);
+    background-color: rgb(122, 122, 122);
+}
+
+.acessibilidade button img{
+    width: 70px;
+    height: 70px;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px 100%;
+}
+
+.link{
+    text-align: center;
+    font-size: 100px 100%;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 30px 100%;
+    margin-top: 20px;
+}
+
+/*Parte do CSS destinada as ferramentas ACD*/
+
+/*Estilo para o modo preto e branco*/
+.preto-e-branco {
+    filter: grayscale(100%);
+}
+
+/*Estilo para o modo Alto Contraste*/
+.alto-contraste {
+    background-color: black; /*Cor em Alto Contraste*/
+    color: white;
+}
+
+.alto-contraste a {
+    color: yellow; /*Exemplo de cor de link em Alto Contraste*/
+}
+
